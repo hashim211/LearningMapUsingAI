@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Roadmap.ai</title>
+  </head>
+  <body>
+    <section class="father">
+      <div class="container">
+        <h1><label for="inp">Enter Your New Learning Path! </label></h1>
+        <br />
+        <textarea
+          type="text"
+          id="userQuery"
+          rows="5"
+          cols="50"
+          style="resize: none; font-size: 15px"
+          required
+        ></textarea>
+
+        <h1><label for="time">How many weeks? </label></h1>
+        <input
+          type="number"
+          id="time"
+          style="border: none; border-radius: 5px; margin-bottom: 10px"
+          required
+        />
+
+
+        
+        <button onclick="fetchGPTResponse()">Submit</button>
+      </div>
+
+      <br />
+      
+
+        <div class="container1" id="sticky-container" style="height: 65vh; margin-left: 20px">
+          <h1 style="margin-top: 5px">Your Roadmap</h1>
+      
+           
+          </div>
+
+    </section>
+  </body>
+
+  <!--Axios Library-->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+</html>
