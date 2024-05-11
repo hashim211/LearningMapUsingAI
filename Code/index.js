@@ -5,7 +5,8 @@ async function fetchGPTResponse() {
     const container = document.getElementById('sticky-container');
     if (query != "" && time != ""){
       container.innerHTML = "Your Roadmap";
-      container.style.fontSize = "x-large"
+      container.style.fontSize = "x-large";
+      
         const options = {
           method: 'POST',
             headers: {
@@ -46,7 +47,7 @@ async function fetchGPTResponse() {
     function addCard(res){
              const container = document.getElementById('sticky-container');
              const note = document.createElement('div');
-             note.className = 'sticky-note';
+             note.className = 'sticky-note col';
              note.textContent = res;
              container.appendChild(note);
     }
